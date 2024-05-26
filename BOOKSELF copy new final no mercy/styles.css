@@ -1,0 +1,94 @@
+/* Gaya Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #F0F2F0, #FDFDFD); /* Background gradasi */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px; /* Padding sedang */
+  }
+  
+  /* Gaya Formulir */
+  #add-book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px; /* Sudut yang lebih bulat */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select,
+  #search-input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 50%; /* Lebar formulir resolusi adaptif */
+    border-radius: 15px; /* Sudut yang lebih bulat */
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"],
+  .move-button,
+  .delete-button,
+  #search-button {
+    padding: 10px 20px; /* Padding tombol */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Sudut yang lebih bulat */
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover,
+  .move-button:hover,
+  .delete-button:hover,
+  #search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Gaya Rak Buku */
+  .bookshelf-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .bookshelf {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px; /* Sudut yang lebih bulat */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    margin: 20px;
+    width: 45%;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Icon */
+  i {
+    margin-right: 10px;
+  }
+  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <title>Lanang Bookshelf Projek</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Lanang Bookshelf Projek</h1>
+  </header>
+  
+  <main>
+    <form id="add-book-form">
+      <input type="text" id="title" placeholder="Judul" required>
+      <input type="text" id="author" placeholder="Penulis" required>
+      <input type="number" id="year" placeholder="Tahun" required>
+      <select id="isComplete" required>
+        <option value="true">Sudah Selesai</option>
+        <option value="false">Belum Selesai</option>
+      </select>
+      <button type="submit">Tambah Buku</button>
+    </form>
+
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Cari Buku">
+      <button id="search-button"><i class="fas fa-search"></i></button>
+    </div>
+
+    <section class="bookshelves">
+      <div class="bookshelf">
+        <h2>Sudah Selesai</h2>
+        <ul id="completed-list"></ul>
+      </div>
+      <div class="bookshelf">
+        <h2>Belum Selesai</h2>
+        <ul id="uncompleted-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
